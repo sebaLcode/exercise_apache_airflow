@@ -24,19 +24,12 @@ Se utilizaron las siguientes tecnologías.
 
 ## Estructura del proyecto
 proyecto-airflow/
-
 │
-
 ├── dags/
-
 │ └── ejercicio_DAG.py
-
 │
-
 ├── docker-compose.yml
-
 ├── README.md
-
 └── .gitignore
 
 ## Flujo del DAG
@@ -60,16 +53,23 @@ A continuación se detallará el paso a paso, para ejecutar el proyecto.
     contraseña: `airflow`
 6. Configurar conexión MySQL, en Administradores > Conexiones > Agregar conexión.
    `Connection Id: mysql_default`
+   
    `Connection Type: MySQL`
+   
     `Host: mysql`
+   
     `Schema: airflow_demo`
+   
     `Login: root`
+   
     `Password: root`
+   
     `Port: 3306`
-7. Finalmente, ejecutar el DAG en Dags > dag_personas_mysql, click en switch y presionar Trigger.
+8. Finalmente, ejecutar el DAG en Dags > dag_personas_mysql, click en switch y presionar Trigger.
    
 Una vez ejecutados los pasos anteriores, se pueden ver los resultados del ETL en MySQL, por lo que dentro del contenedor (carpeta airflow-docker) ejecutar:
     `docker exec -it mysql mysql -u root -p`
 Luego en contraseña escribir `root`, finalmente ejecutar:
     `USE airflow_demo;`
+    
     `SELECT * FROM personas;`
