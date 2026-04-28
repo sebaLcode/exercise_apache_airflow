@@ -11,16 +11,12 @@ El flujo consiste en:
 3. Transformar (limpiar) la información.
 4. Cargar los datos en una base de datos MySQL.
 
----
-
 ## Tecnologías utilizadas
 Se utilizaron las siguientes tecnologías.
 - Apache Airflow
 - Docker / Docker Compose
 - Python (Pandas)
 - MySQL
-
----
 
 ## Estructura del proyecto
 proyecto-airflow/
@@ -39,7 +35,6 @@ start → generate_csv_data → extract_data → transform_data → load_data_my
 - extract_data: lee el archivo .csv.
 - transform_data: limpia el rut, fecha y categoría.
 - load_data_mysql: carga los datos en MySQL.
-
 
 ## Cómo ejecutar el proyecto
 A continuación se detallará el paso a paso para ejecutar el proyecto.
