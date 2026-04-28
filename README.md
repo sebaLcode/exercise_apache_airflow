@@ -42,7 +42,7 @@ start → generate_csv_data → extract_data → transform_data → load_data_my
 
 
 ## Cómo ejecutar el proyecto
-A continuación se detallará el paso a paso, para ejecutar el proyecto.
+A continuación se detallará el paso a paso para ejecutar el proyecto.
 1. Clonar el repositorio y entrar a la carpeta.
 2. Dentro de la carpeta inicializar Airflow con docker en PowerShell.
    `docker compose up airflow-init`
