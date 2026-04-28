@@ -25,10 +25,8 @@ Se utilizaron las siguientes tecnologías.
 ## Estructura del proyecto
 proyecto-airflow/
 
-├── dags/
-│ └── ejercicio_DAG.py
+├── dags/ ejercicio_DAG.py
 
-│
 ├── docker-compose.yml
 
 ├── README.md
@@ -72,8 +70,7 @@ A continuación se detallará el paso a paso, para ejecutar el proyecto.
    
 Una vez ejecutados los pasos anteriores, se pueden ver los resultados del ETL en MySQL, por lo que dentro del contenedor (carpeta airflow-docker) ejecutar:
     `docker exec -it mysql mysql -u root -p`
-Luego en contraseña escribir `root`, finalmente ejecutar:
-    ```mysql
-    USE airflow_demo;
-    SELECT * FROM personas;
-    ```
+Luego en contraseña escribir `root`, una vez dentro ejecutar:
+```mysql
+USE airflow_demo;
+SELECT * FROM personas;
