@@ -53,6 +53,7 @@ A continuación se detallará el paso a paso, para ejecutar el proyecto.
     usuario: `airflow`
     contraseña: `airflow`
 6. Configurar conexión MySQL, en Administradores > Conexiones > Agregar conexión.
+   
    `Connection Id: mysql_default`
    
    `Connection Type: MySQL`
