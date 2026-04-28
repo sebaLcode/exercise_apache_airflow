@@ -1,0 +1,28 @@
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Airflow logs
+logs/
+*.log
+
+# Data generada
+data/
+*.csv
+
+# Entornos
+.env
+
+# Docker volumes
+postgres-db-volume/
+mysql-db-volume/
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
